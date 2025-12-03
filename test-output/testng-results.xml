@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-03T16:51:44 IST" name="Default suite" finished-at="2025-12-03T16:52:09 IST" duration-ms="25056">
+    <groups>
+    </groups>
+    <test started-at="2025-12-03T16:51:44 IST" name="Default test" finished-at="2025-12-03T16:52:09 IST" duration-ms="25056">
+      <class name="ecommerce.Logoutfunctionality">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:51:44 IST" name="setup" finished-at="2025-12-03T16:51:50 IST" duration-ms="5485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogoutNegative()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:51:50 IST" name="verifyLogoutNegative" finished-at="2025-12-03T16:52:00 IST" duration-ms="10567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutNegative -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:52:00 IST" name="tearDown" finished-at="2025-12-03T16:52:02 IST" duration-ms="1924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:52:02 IST" name="setup" finished-at="2025-12-03T16:52:05 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogoutPositive()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:52:05 IST" name="verifyLogoutPositive" finished-at="2025-12-03T16:52:09 IST" duration-ms="3691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutPositive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecommerce.Logoutfunctionality@5bf0d49]" started-at="2025-12-03T16:52:09 IST" name="tearDown" finished-at="2025-12-03T16:52:09 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecommerce.Logoutfunctionality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
