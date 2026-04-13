@@ -7,41 +7,39 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
-    // Locators
-    By loginBtn = By.id("login2");
-    By username = By.id("loginusername");
-    By password = By.id("loginpassword");
-    By submitBtn = By.xpath("//button[text()='Log in']");
+    private By loginBtn = By.id("login2");
+    private By username = By.id("loginusername");
+    private By password = By.id("loginpassword");
+    private By submitBtn = By.xpath("//button[text()='Log in']");
+    private By logoutBtn = By.id("logout2");
 
     public LoginPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
     }
 
-    // Open login popup
     public void openLoginPopup() {
         driver.findElement(loginBtn).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(username));
     }
 
-    // Enter credentials
     public void enterUsername(String user) {
+        driver.findElement(username).clear();
         driver.findElement(username).sendKeys(user);
     }
 
     public void enterPassword(String pass) {
+        driver.findElement(password).clear();
         driver.findElement(password).sendKeys(pass);
     }
 
-    // Click login
     public void clickLogin() {
         driver.findElement(submitBtn).click();
     }
 
-    // Full login flow
     public void login(String user, String pass) {
         openLoginPopup();
         enterUsername(user);
@@ -49,7 +47,6 @@ public class LoginPage {
         clickLogin();
     }
 
-    // Handle alert
     public String getAlertText() {
         wait.until(ExpectedConditions.alertIsPresent());
         String text = driver.switchTo().alert().getText();
@@ -57,8 +54,11 @@ public class LoginPage {
         return text;
     }
 
-    // Check password masked
     public String getPasswordType() {
         return driver.findElement(password).getAttribute("type");
+    }
+
+    public boolean isLogoutVisible() {
+        return driver.findElement(logoutBtn).isDisplayed();
     }
 }
